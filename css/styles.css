@@ -87,15 +87,13 @@ h1,h2,h3,p,blockquote,figure{margin:0}
 /*
   OWNER-FOCUSED PREMIUM HERO COMPOSITION
   ───────────────────────────────────────
-  Features the high-definition (2560x1440 QHD) master photograph with the salon
-  owner standing prominently on the right alongside the official Embellish signboard.
-  The image is sharp, naturally exposed, and seamlessly blended into the dark
-  luxury palette on the left for the heading typography.
+  The salon photo is sharp and naturally exposed, with darker negative space
+  on the left for the heading typography.
 */
 .hero::before{
   content:"";
   position:absolute;inset:0;z-index:-3;
-  background-image:url("../assets/images/hero-owner.webp");
+  background-image:url("../assets/images/salon-look.webp");
   background-size:cover;
   background-position:right center;
   background-repeat:no-repeat;
@@ -225,6 +223,12 @@ h1,h2,h3,p,blockquote,figure{margin:0}
   transform:scale(1.08);
   transition:transform 1.6s cubic-bezier(.2,.7,.1,1), filter 1.6s;
 }
+.sample-photo{
+  position:absolute;top:12px;left:12px;z-index:1;
+  padding:4px 8px;border-radius:2px;
+  background:rgba(20,8,15,.78);color:var(--pearl);
+  font-size:.6875rem;letter-spacing:.06em;text-transform:uppercase;
+}
 .svc.on .plate img{transform:scale(1);filter:saturate(.85) contrast(1.05) brightness(.92)}
 
 /*
@@ -294,6 +298,7 @@ h1,h2,h3,p,blockquote,figure{margin:0}
 .cyl-item{position:absolute;inset:0;display:flex;align-items:center;white-space:nowrap;backface-visibility:hidden;
   font:400 calc(var(--h)*.74)/1 var(--display);letter-spacing:.01em;
   transform:rotateX(calc(var(--i)*-72deg)) translateZ(var(--R));text-shadow:0 2px 30px rgba(10,5,12,.7)}
+.cyl-item:nth-child(4){font-size:calc(var(--h)*.34)}
 .enhanced .svc{grid-area:1/1;opacity:0;visibility:hidden;transform:translateY(18px);
   transition:opacity .45s,transform .45s,visibility 0s .45s}
 .enhanced .svc.on{opacity:1;visibility:visible;transform:none;transition:opacity .45s,transform .45s,visibility 0s}
