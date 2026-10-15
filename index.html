@@ -1,259 +1,322 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Embellish Unisex Salon, Saheed Nagar, Bhubaneswar (design concept)</title>
-<meta name="description" content="A design concept for Embellish Unisex Salon in Saheed Nagar, Bhubaneswar: hair, skin, nails, lashes, makeup and grooming for men and women. Open daily 7 am to 11 pm.">
-<meta name="theme-color" content="#14080F">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Embellish Unisex Salon, Saheed Nagar, Bhubaneswar (design concept)</title>
+  <meta name="description"
+    content="A design concept for Embellish Unisex Salon in Saheed Nagar, Bhubaneswar: hair, skin, nails, lashes, makeup and grooming for men and women. Open daily 7 am to 11 pm.">
+  <meta name="theme-color" content="#14080F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Italiana&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<canvas id="gl" aria-hidden="true"></canvas>
-<div class="veil" aria-hidden="true"></div>
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
 
-<!-- ── Fixed chrome ── -->
-<header class="top">
-  <a class="mark" id="mark" href="#top">Embellish</a>
-  <div class="clock">
-    <span class="clock-time" id="clockTime">7:00 am</span>
-    <span class="clock-note">Open daily, 7 am to 11 pm</span>
-  </div>
-</header>
+  <!-- ── Fixed chrome ── -->
+  <header class="top">
+    <a class="mark" id="mark" href="#top">Embellish</a>
+    <div class="clock">
+      <span class="clock-time" id="clockTime">7:00 am</span>
+      <span class="clock-note">Open daily, 7 am to 11 pm</span>
+    </div>
+  </header>
 
-<!-- ── Compact sticky quick-nav ── -->
-<nav class="quicknav" aria-label="Page sections">
-  <a href="#services">Services</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#visit">Visit</a>
-</nav>
+  <!-- ── Compact sticky quick-nav ── -->
+  <nav class="quicknav" aria-label="Page sections">
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+  </nav>
 
-<div class="fab"><a class="btn" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a></div>
-<p class="concept"><span class="short">Design concept</span><span class="long">Design concept by Sanghars Mohanty. Not the salon's official site.</span></p>
+  <div class="fab"><a class="btn"
+      href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on
+      WhatsApp</a></div>
+  <p class="concept"><span class="short">Design concept</span><span class="long">Design concept by Sanghars Mohanty. Not
+      the salon's official site.</span></p>
 
-<main id="top">
+  <main id="top">
 
-  <!-- ══════════════════════════════════════════════════════════ HERO -->
-  <section class="hero" id="hero">
-    <!--
+    <!-- ══════════════════════════════════════════════════════════ HERO -->
+    <section class="hero" id="hero">
+      <!--
       Hero background features owner with salon and PS Brides branding.
       If a video reel is added in the future, place hero.mp4 in assets/video/ and restore the <source>.
     -->
-    <video class="hero-media" id="heroMedia" muted loop playsinline preload="metadata" aria-hidden="true"
-      poster="assets/images/hero-owner.webp">
-    </video>
-    <div class="hero-spotlight" aria-hidden="true"></div>
-    <div class="brand-crest shadowed" aria-hidden="true">
-      <svg class="crest-lotus" viewBox="0 0 100 64" fill="none" stroke="currentColor">
-        <path d="M50 8 C47 25, 42 45, 50 56 C58 45, 53 25, 50 8 Z" stroke-width="1.8" fill="rgba(233,183,166,0.15)"/>
-        <path d="M50 56 C38 48, 22 36, 28 20 C36 28, 44 42, 50 56 Z" stroke-width="1.6" fill="rgba(233,183,166,0.1)"/>
-        <path d="M50 56 C62 48, 78 36, 72 20 C64 28, 56 42, 50 56 Z" stroke-width="1.6" fill="rgba(233,183,166,0.1)"/>
-        <path d="M50 56 C30 52, 10 44, 16 32 C26 36, 38 48, 50 56 Z" stroke-width="1.4"/>
-        <path d="M50 56 C70 52, 90 44, 84 32 C74 36, 62 48, 50 56 Z" stroke-width="1.4"/>
-        <circle cx="50" cy="56" r="2.5" fill="currentColor"/>
-      </svg>
-      <span class="crest-tag">PS Brides · Unisex Studio</span>
-    </div>
-    <h1 class="word shadowed" aria-label="Embellish">
-      <span aria-hidden="true" style="--n:0">E</span><span aria-hidden="true" style="--n:1">m</span><span aria-hidden="true" style="--n:2">b</span><span aria-hidden="true" style="--n:3">e</span><span aria-hidden="true" style="--n:4">l</span><span aria-hidden="true" style="--n:5">l</span><span aria-hidden="true" style="--n:6">i</span><span aria-hidden="true" style="--n:7">s</span><span aria-hidden="true" style="--n:8">h</span>
-    </h1>
-    <p class="tag shadowed">Where beauty meets precision.</p>
-    <p class="sub shadowed">Unisex salon in Saheed Nagar, Bhubaneswar. Hair, skin, nails, lashes, makeup and grooming for men and women.</p>
-    <a class="btn" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
-    <p class="hint shadowed" id="hint">Scroll. The light follows the salon's day, from 7 am to 11 pm.</p>
-  </section>
+      <video class="hero-media" id="heroMedia" muted loop playsinline preload="metadata" aria-hidden="true"
+        poster="assets/images/hero-owner.webp">
+      </video>
+      <div class="hero-spotlight" aria-hidden="true"></div>
+      <div class="brand-crest shadowed" aria-hidden="true">
+        <svg class="crest-lotus" viewBox="0 0 100 64" fill="none" stroke="currentColor">
+          <path d="M50 8 C47 25, 42 45, 50 56 C58 45, 53 25, 50 8 Z" stroke-width="1.8" fill="rgba(233,183,166,0.15)" />
+          <path d="M50 56 C38 48, 22 36, 28 20 C36 28, 44 42, 50 56 Z" stroke-width="1.6"
+            fill="rgba(233,183,166,0.1)" />
+          <path d="M50 56 C62 48, 78 36, 72 20 C64 28, 56 42, 50 56 Z" stroke-width="1.6"
+            fill="rgba(233,183,166,0.1)" />
+          <path d="M50 56 C30 52, 10 44, 16 32 C26 36, 38 48, 50 56 Z" stroke-width="1.4" />
+          <path d="M50 56 C70 52, 90 44, 84 32 C74 36, 62 48, 50 56 Z" stroke-width="1.4" />
+          <circle cx="50" cy="56" r="2.5" fill="currentColor" />
+        </svg>
+        <span class="crest-tag">PS Brides · Unisex Studio</span>
+      </div>
+      <h1 class="word shadowed" aria-label="Embellish">
+        <span aria-hidden="true" style="--n:0">E</span><span aria-hidden="true" style="--n:1">m</span><span
+          aria-hidden="true" style="--n:2">b</span><span aria-hidden="true" style="--n:3">e</span><span
+          aria-hidden="true" style="--n:4">l</span><span aria-hidden="true" style="--n:5">l</span><span
+          aria-hidden="true" style="--n:6">i</span><span aria-hidden="true" style="--n:7">s</span><span
+          aria-hidden="true" style="--n:8">h</span>
+      </h1>
+      <p class="tag shadowed">Where beauty meets precision.</p>
+      <p class="sub shadowed">Unisex salon in Saheed Nagar, Bhubaneswar. Hair, skin, nails, lashes, makeup and grooming
+        for men and women.</p>
+      <a class="btn"
+        href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on
+        WhatsApp</a>
+      <p class="hint shadowed" id="hint">Scroll. The light follows the salon's day, from 7 am to 11 pm.</p>
+    </section>
 
-  <!-- ══════════════════════════════════════════════════════════ SERVICES -->
-  <section class="drum" id="services" aria-labelledby="svc-h">
-    <div class="drum-pin">
-      <h2 class="vh" id="svc-h">Services</h2>
-      <div class="wheel" aria-hidden="true">
-        <div class="cyl" id="cyl">
-          <div class="cyl-item" style="--i:0">Hair</div>
-          <div class="cyl-item" style="--i:1">Skin</div>
-          <div class="cyl-item" style="--i:2">Nails</div>
-          <div class="cyl-item" style="--i:3">Makeup</div>
-          <div class="cyl-item" style="--i:4">Grooming</div>
+    <!-- ══════════════════════════════════════════════════════════ SERVICES -->
+    <section class="drum" id="services" aria-labelledby="svc-h">
+      <div class="drum-pin">
+        <h2 class="vh" id="svc-h">Services</h2>
+        <div class="wheel" aria-hidden="true">
+          <div class="cyl" id="cyl">
+            <div class="cyl-item" style="--i:0">Hair</div>
+            <div class="cyl-item" style="--i:1">Skin</div>
+            <div class="cyl-item" style="--i:2">Nails</div>
+            <div class="cyl-item" style="--i:3">Makeup</div>
+            <div class="cyl-item" style="--i:4">Grooming</div>
+          </div>
+        </div>
+        <div class="detail shadowed" id="detail">
+
+          <!-- Hair — representative stock photo fallback until salon photo provided -->
+          <div class="svc on">
+            <figure class="plate" data-file="assets/images/hair.jpg">
+              <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=1000&q=80&auto=format&fit=crop"
+                alt="Representative hair colouring and styling service showcase" loading="lazy" decoding="async"
+                width="800" height="1000">
+            </figure>
+            <h3>Hair</h3>
+            <p>Haircuts · Hair wash &amp; set · Straightening &amp; ironing · Global colour, balayage &amp; highlights ·
+              Kerasmooth · Nanoplastia · Botox treatment · Deep conditioning.</p>
+            <p class="price">Prices vary by service and length — ask us for the current menu.</p>
+            <a class="btn ghost"
+              href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20your%20hair%20services%20and%20prices.">Ask
+              about hair</a>
+          </div>
+
+          <!-- Skin — representative stock photo fallback until salon photo provided -->
+          <div class="svc">
+            <figure class="plate" data-file="assets/images/skin.jpg">
+              <img
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=1000&q=80&auto=format&fit=crop"
+                alt="Representative facial and skin care treatment showcase" loading="lazy" decoding="async" width="800"
+                height="1000">
+            </figure>
+            <h3>Skin</h3>
+            <p>Cleanup · Basic, advanced &amp; premium facials · Korean spa · De-tan · Hydra facial · Anti-ageing
+              treatment.</p>
+            <p class="price">Prices vary by treatment — ask us for the current menu.</p>
+            <a class="btn ghost"
+              href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20your%20skin%20services%20and%20prices.">Ask
+              about skin</a>
+          </div>
+
+          <!-- Nails — real photo: Nails section.webp (the dedicated nail & lash room) -->
+          <div class="svc">
+            <figure class="plate plate--nails">
+              <img src="assets/images/Nails section.webp" alt="Dedicated Lashes &amp; Nail Extension room at Embellish"
+                loading="lazy" decoding="async" width="800" height="1000">
+            </figure>
+            <h3>Nails &amp; Lashes</h3>
+            <p>Manicure · Pedicure (massage chair bays) · Nail art · Nail extensions · Eyelash extensions.</p>
+            <p class="price">Prices vary by style and length — ask us for the current menu.</p>
+            <a class="btn ghost"
+              href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20nails%20and%20lash%20extensions%20and%20prices.">Ask
+              about nails &amp; lashes</a>
+          </div>
+
+          <!-- Makeup — real photo: Bridal.webp -->
+          <div class="svc">
+            <figure class="plate plate--bridal">
+              <img src="assets/images/Bridal.webp" alt="Bridal makeup by PS Brides studio at Embellish" loading="lazy"
+                decoding="async" width="800" height="1000">
+            </figure>
+            <h3>Makeup &amp; Bridal</h3>
+            <p>Party makeup · Pre-bridal packages · Bridal makeup (PS Brides studio) · Groom packages · Saree draping
+              &amp; styling.</p>
+            <p class="price">Prices vary by package — ask us for the current menu.</p>
+            <a class="btn ghost"
+              href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20makeup%20and%20pre-bridal%20services.">Ask
+              about makeup</a>
+          </div>
+
+          <!-- Grooming — representative stock photo fallback until salon photo provided -->
+          <div class="svc">
+            <figure class="plate" data-file="assets/images/grooming.jpg">
+              <img
+                src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&h=1000&q=80&auto=format&fit=crop"
+                alt="Representative men's grooming and beard styling showcase" loading="lazy" decoding="async"
+                width="800" height="1000">
+            </figure>
+            <h3>Grooming</h3>
+            <p>Haircut · Beard trim &amp; styling · Beard spa · Threading · Waxing · Relaxing massage · Skin care for
+              men.</p>
+            <p class="price">Prices vary by service — ask us for the current menu.</p>
+            <a class="btn ghost"
+              href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20your%20grooming%20services%20and%20prices.">Ask
+              about grooming</a>
+          </div>
+
         </div>
       </div>
-      <div class="detail shadowed" id="detail">
+    </section>
 
-        <!-- Hair — representative stock photo fallback until salon photo provided -->
-        <div class="svc on">
-          <figure class="plate" data-file="assets/images/hair.jpg">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=1000&q=80&auto=format&fit=crop"
-              alt="Representative hair colouring and styling service showcase" loading="lazy" decoding="async" width="800" height="1000">
-          </figure>
-          <h3>Hair</h3>
-          <p>Haircuts · Hair wash &amp; set · Straightening &amp; ironing · Global colour, balayage &amp; highlights · Kerasmooth · Nanoplastia · Botox treatment · Deep conditioning.</p>
-          <p class="price">Prices vary by service and length — ask us for the current menu.</p>
-          <a class="btn ghost" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20your%20hair%20services%20and%20prices.">Ask about hair</a>
-        </div>
+    <!-- ══════════════════════════════════════════════════════════ GALLERY -->
+    <section class="gallery-section" id="gallery" aria-labelledby="gal-h">
+      <h2 class="section-label shadowed" id="gal-h">From the salon</h2>
+      <p class="section-sub shadowed">Real photos from Embellish — follow <a
+          href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener">@embellishsalonbbsr</a>
+        for daily updates.</p>
 
-        <!-- Skin — representative stock photo fallback until salon photo provided -->
-        <div class="svc">
-          <figure class="plate" data-file="assets/images/skin.jpg">
-            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=1000&q=80&auto=format&fit=crop"
-              alt="Representative facial and skin care treatment showcase" loading="lazy" decoding="async" width="800" height="1000">
-          </figure>
-          <h3>Skin</h3>
-          <p>Cleanup · Basic, advanced &amp; premium facials · Korean spa · De-tan · Hydra facial · Anti-ageing treatment.</p>
-          <p class="price">Prices vary by treatment — ask us for the current menu.</p>
-          <a class="btn ghost" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20your%20skin%20services%20and%20prices.">Ask about skin</a>
-        </div>
+      <div class="gallery-grid">
 
-        <!-- Nails — real photo: Nails section.webp (the dedicated nail & lash room) -->
-        <div class="svc">
-          <figure class="plate plate--nails">
-            <img src="assets/images/Nails section.webp"
-              alt="Dedicated Lashes &amp; Nail Extension room at Embellish" loading="lazy" decoding="async" width="800" height="1000">
-          </figure>
-          <h3>Nails &amp; Lashes</h3>
-          <p>Manicure · Pedicure (massage chair bays) · Nail art · Nail extensions · Eyelash extensions.</p>
-          <p class="price">Prices vary by style and length — ask us for the current menu.</p>
-          <a class="btn ghost" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20nails%20and%20lash%20extensions%20and%20prices.">Ask about nails &amp; lashes</a>
-        </div>
+        <!-- Tile 1: Owner with PS Brides board — wide hero tile -->
+        <a class="gallery-tile gallery-tile--wide" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank"
+          rel="noopener" aria-label="Owner at Embellish — view on Instagram">
+          <img src="assets/images/OWNER with salon.webp"
+            alt="Owner Pragya Swain at Embellish Unisex Salon with PS Brides logo" loading="lazy" decoding="async"
+            width="1200" height="800" style="object-position:50% 30%">
+          <div class="tile-label"><span>Embellish · PS Brides</span></div>
+        </a>
 
-        <!-- Makeup — real photo: Bridal.webp -->
-        <div class="svc">
-          <figure class="plate plate--bridal">
-            <img src="assets/images/Bridal.webp"
-              alt="Bridal makeup by PS Brides studio at Embellish" loading="lazy" decoding="async" width="800" height="1000">
-          </figure>
-          <h3>Makeup &amp; Bridal</h3>
-          <p>Party makeup · Pre-bridal packages · Bridal makeup (PS Brides studio) · Groom packages · Saree draping &amp; styling.</p>
-          <p class="price">Prices vary by package — ask us for the current menu.</p>
-          <a class="btn ghost" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20makeup%20and%20pre-bridal%20services.">Ask about makeup</a>
-        </div>
+        <!-- Tile 2: Salon interior (bright) -->
+        <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener"
+          aria-label="Salon interior — view on Instagram">
+          <img src="assets/images/Salon inside look.webp" alt="Luxury interior of Embellish Unisex Salon, Saheed Nagar"
+            loading="lazy" decoding="async" width="800" height="600" style="object-position:50% 40%">
+          <div class="tile-label"><span>The salon</span></div>
+        </a>
 
-        <!-- Grooming — representative stock photo fallback until salon photo provided -->
-        <div class="svc">
-          <figure class="plate" data-file="assets/images/grooming.jpg">
-            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&h=1000&q=80&auto=format&fit=crop"
-              alt="Representative men's grooming and beard styling showcase" loading="lazy" decoding="async" width="800" height="1000">
-          </figure>
-          <h3>Grooming</h3>
-          <p>Haircut · Beard trim &amp; styling · Beard spa · Threading · Waxing · Relaxing massage · Skin care for men.</p>
-          <p class="price">Prices vary by service — ask us for the current menu.</p>
-          <a class="btn ghost" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20know%20about%20your%20grooming%20services%20and%20prices.">Ask about grooming</a>
-        </div>
+        <!-- Tile 3: Nail art — Nails.webp (blue close-up) -->
+        <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener"
+          aria-label="Nail art — view on Instagram">
+          <img src="assets/images/Nails.webp" alt="Blue cat-eye nail art at Embellish" loading="lazy" decoding="async"
+            width="800" height="600" style="object-position:50% 55%">
+          <div class="tile-label"><span>Nail art</span></div>
+        </a>
+
+        <!-- Tile 4: Nail art — Nalis1.webp (silver glitter) -->
+        <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener"
+          aria-label="Nail art — view on Instagram">
+          <img src="assets/images/Nalis1.webp" alt="Bridal silver glitter nail extensions at Embellish" loading="lazy"
+            decoding="async" width="600" height="800" style="object-position:50% 35%">
+          <div class="tile-label"><span>Nail art</span></div>
+        </a>
+
+        <!-- Tile 5: Nails section room -->
+        <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener"
+          aria-label="Lashes & Nail Extension room — view on Instagram">
+          <img src="assets/images/Nails section.webp" alt="Dedicated Lashes &amp; Nail Extension station at Embellish"
+            loading="lazy" decoding="async" width="800" height="600" style="object-position:50% 50%">
+          <div class="tile-label"><span>Nail studio</span></div>
+        </a>
+
+        <!-- Tile 6: Bridal -->
+        <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener"
+          aria-label="Bridal makeup by PS Brides — view on Instagram">
+          <img src="assets/images/Bridal.webp" alt="PS Brides bridal makeup at Embellish" loading="lazy"
+            decoding="async" width="600" height="900" style="object-position:50% 20%">
+          <div class="tile-label"><span>PS Brides</span></div>
+        </a>
 
       </div>
-    </div>
-  </section>
 
-  <!-- ══════════════════════════════════════════════════════════ GALLERY -->
-  <section class="gallery-section" id="gallery" aria-labelledby="gal-h">
-    <h2 class="section-label shadowed" id="gal-h">From the salon</h2>
-    <p class="section-sub shadowed">Real photos from Embellish — follow <a href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener">@embellishsalonbbsr</a> for daily updates.</p>
+      <div class="gallery-cta">
+        <a class="btn ghost" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+          Follow @embellishsalonbbsr
+        </a>
+      </div>
+    </section>
 
-    <div class="gallery-grid">
+    <!-- ══════════════════════════════════════════════════════════ REVIEWS -->
+    <section class="voices" id="reviews" aria-labelledby="rev-h">
+      <div class="voices-pin">
+        <h2 class="vh" id="rev-h">Reviews</h2>
+        <p class="rating shadowed">
+          ★★★★★&ensp;Highly rated on public listings · Check current reviews:
+          <a class="rating-link" href="https://salonist.io/salon/embellish-unisex-salon-saheed-nagar-bhubaneswar"
+            target="_blank" rel="noopener">Salonist ↗</a>
+          <a class="rating-link"
+            href="https://www.google.com/maps/search/?api=1&query=Embellish+Unisex+Salon+Saheed+Nagar+Bhubaneswar"
+            target="_blank" rel="noopener">Google ↗</a>
+        </p>
+        <figure class="quote shadowed">
+          <blockquote>Each one of them knew their job perfectly and did a fabulous work on my hair.</blockquote>
+          <figcaption>Samudrika, May 2026</figcaption>
+        </figure>
+        <figure class="quote shadowed">
+          <blockquote>Great service, friendly staff, and a very comfortable atmosphere.</blockquote>
+          <figcaption>Smruti, May 2026</figcaption>
+        </figure>
+        <figure class="quote shadowed">
+          <blockquote>The service was so good. I just loved the hair cut — honest and non-pushy advice too.</blockquote>
+          <figcaption>Arandita, May 2026</figcaption>
+        </figure>
+      </div>
+    </section>
 
-      <!-- Tile 1: Owner with PS Brides board — wide hero tile -->
-      <a class="gallery-tile gallery-tile--wide" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener" aria-label="Owner at Embellish — view on Instagram">
-        <img src="assets/images/OWNER with salon.webp"
-          alt="Owner Pragya Swain at Embellish Unisex Salon with PS Brides logo" loading="lazy" decoding="async" width="1200" height="800" style="object-position:50% 30%">
-        <div class="tile-label"><span>Embellish · PS Brides</span></div>
-      </a>
-
-      <!-- Tile 2: Salon interior (bright) -->
-      <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener" aria-label="Salon interior — view on Instagram">
+    <!-- ══════════════════════════════════════════════════════════ VISIT -->
+    <section class="visit" id="visit" aria-labelledby="visit-h">
+      <!-- Real salon photo — spacious, bright, modern interior -->
+      <figure class="plate store">
         <img src="assets/images/Salon inside look.webp"
-          alt="Luxury interior of Embellish Unisex Salon, Saheed Nagar" loading="lazy" decoding="async" width="800" height="600" style="object-position:50% 40%">
-        <div class="tile-label"><span>The salon</span></div>
-      </a>
-
-      <!-- Tile 3: Nail art — Nails.webp (blue close-up) -->
-      <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener" aria-label="Nail art — view on Instagram">
-        <img src="assets/images/Nails.webp"
-          alt="Blue cat-eye nail art at Embellish" loading="lazy" decoding="async" width="800" height="600" style="object-position:50% 55%">
-        <div class="tile-label"><span>Nail art</span></div>
-      </a>
-
-      <!-- Tile 4: Nail art — Nalis1.webp (silver glitter) -->
-      <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener" aria-label="Nail art — view on Instagram">
-        <img src="assets/images/Nalis1.webp"
-          alt="Bridal silver glitter nail extensions at Embellish" loading="lazy" decoding="async" width="600" height="800" style="object-position:50% 35%">
-        <div class="tile-label"><span>Nail art</span></div>
-      </a>
-
-      <!-- Tile 5: Nails section room -->
-      <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener" aria-label="Lashes & Nail Extension room — view on Instagram">
-        <img src="assets/images/Nails section.webp"
-          alt="Dedicated Lashes &amp; Nail Extension station at Embellish" loading="lazy" decoding="async" width="800" height="600" style="object-position:50% 50%">
-        <div class="tile-label"><span>Nail studio</span></div>
-      </a>
-
-      <!-- Tile 6: Bridal -->
-      <a class="gallery-tile" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener" aria-label="Bridal makeup by PS Brides — view on Instagram">
-        <img src="assets/images/Bridal.webp"
-          alt="PS Brides bridal makeup at Embellish" loading="lazy" decoding="async" width="600" height="900" style="object-position:50% 20%">
-        <div class="tile-label"><span>PS Brides</span></div>
-      </a>
-
-    </div>
-
-    <div class="gallery-cta">
-      <a class="btn ghost" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        Follow @embellishsalonbbsr
-      </a>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════════════════ REVIEWS -->
-  <section class="voices" id="reviews" aria-labelledby="rev-h">
-    <div class="voices-pin">
-      <h2 class="vh" id="rev-h">Reviews</h2>
-      <p class="rating shadowed">
-        ★★★★★&ensp;Highly rated on public listings · Check current reviews:
-        <a class="rating-link" href="https://salonist.io/salon/embellish-unisex-salon-saheed-nagar-bhubaneswar" target="_blank" rel="noopener">Salonist ↗</a>
-        <a class="rating-link" href="https://www.google.com/maps/search/?api=1&query=Embellish+Unisex+Salon+Saheed+Nagar+Bhubaneswar" target="_blank" rel="noopener">Google ↗</a>
-      </p>
-      <figure class="quote shadowed">
-        <blockquote>Each one of them knew their job perfectly and did a fabulous work on my hair.</blockquote>
-        <figcaption>Samudrika, May 2026</figcaption>
+          alt="Embellish Unisex Salon interior — Saheed Nagar, Bhubaneswar" loading="lazy" decoding="async" width="1200"
+          height="800" style="object-position:50% 50%">
       </figure>
-      <figure class="quote shadowed">
-        <blockquote>Great service, friendly staff, and a very comfortable atmosphere.</blockquote>
-        <figcaption>Smruti, May 2026</figcaption>
-      </figure>
-      <figure class="quote shadowed">
-        <blockquote>The service was so good. I just loved the hair cut — honest and non-pushy advice too.</blockquote>
-        <figcaption>Arandita, May 2026</figcaption>
-      </figure>
-    </div>
-  </section>
+      <h2 id="visit-h" class="shadowed">Open every day, 7 am to 11 pm.</h2>
+      <address class="shadowed">1st Floor, Plot No. 59, Bishnu Mandir Lane,<br>Opp. Saheed Nagar Water Tank,<br>Saheed
+        Nagar, Bhubaneswar, Odisha 751007</address>
+      <p class="call shadowed">Call or WhatsApp <a href="tel:+919777039081">97770 39081</a></p>
+      <div class="actions">
+        <a class="btn"
+          href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book
+          on WhatsApp</a>
+        <a class="btn ghost"
+          href="https://www.google.com/maps/search/?api=1&query=Embellish+Unisex+Salon+Saheed+Nagar+Bhubaneswar"
+          target="_blank" rel="noopener">Get directions</a>
+        <a class="btn ghost" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank"
+          rel="noopener">Instagram</a>
+      </div>
+    </section>
 
-  <!-- ══════════════════════════════════════════════════════════ VISIT -->
-  <section class="visit" id="visit" aria-labelledby="visit-h">
-    <!-- Real salon photo — spacious, bright, modern interior -->
-    <figure class="plate store">
-      <img src="assets/images/Salon inside look.webp"
-        alt="Embellish Unisex Salon interior — Saheed Nagar, Bhubaneswar" loading="lazy" decoding="async" width="1200" height="800"
-        style="object-position:50% 50%">
-    </figure>
-    <h2 id="visit-h" class="shadowed">Open every day, 7 am to 11 pm.</h2>
-    <address class="shadowed">1st Floor, Plot No. 59, Bishnu Mandir Lane,<br>Opp. Saheed Nagar Water Tank,<br>Saheed Nagar, Bhubaneswar, Odisha 751007</address>
-    <p class="call shadowed">Call or WhatsApp <a href="tel:+919777039081">97770 39081</a></p>
-    <div class="actions">
-      <a class="btn" href="https://wa.me/919777039081?text=Hi%20Embellish%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
-      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Embellish+Unisex+Salon+Saheed+Nagar+Bhubaneswar" target="_blank" rel="noopener">Get directions</a>
-      <a class="btn ghost" href="https://www.instagram.com/embellishsalonbbsr/" target="_blank" rel="noopener">Instagram</a>
-    </div>
-  </section>
+  </main>
 
-</main>
+  <footer>
+    <p>Design concept by Sanghars Mohanty, Freelance Digital &amp; AI Solutions Consultant. Salon photos are from
+      Embellish's Google Maps listing, used with the owner's approval. Hair, skin, and grooming service photos are
+      Unsplash placeholders (CC0) until real photos are provided. Please verify hours, reviews, and contact info
+      directly with the salon before final publishing. This is not the salon's official website.</p>
+  </footer>
 
-<footer>
-  <p>Design concept by Sanghars Mohanty, Freelance Digital &amp; AI Solutions Consultant. Salon photos are from Embellish's Google Maps listing, used with the owner's approval. Hair, skin, and grooming service photos are Unsplash placeholders (CC0) until real photos are provided. Please verify hours, reviews, and contact info directly with the salon before final publishing. This is not the salon's official website.</p>
-</footer>
-
-<script src="js/media.js"></script>
-<script src="js/strands.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/strands.js"></script>
 </body>
+
 </html>
